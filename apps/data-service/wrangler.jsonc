@@ -73,7 +73,11 @@
 					"tag": "1",
 					"new_classes": ["EvaluationScheduler"]
 				}
-			]
+			],
+			"vars": {
+				"VITE_BASE_HOST": "https://user-application-stage.ivanleomk9297.workers.dev",
+				"CLOUDFLARE_ENV": "stage"
+			}
 		},
 		"production": {
 			"d1_databases": [

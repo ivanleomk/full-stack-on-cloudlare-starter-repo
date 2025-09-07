@@ -78,12 +78,11 @@ export async function createContext({
 }
 
 // In your tRPC procedures
-export const myProcedure = t.procedure
-  .query(({ ctx }) => {
-    // Access typed bindings
-    const value = await ctx.env.MY_KV.get('some-key');
-    return { value };
-  });
+export const myProcedure = t.procedure.query(({ ctx }) => {
+  // Access typed bindings
+  const value = await ctx.env.MY_KV.get("some-key");
+  return { value };
+});
 ```
 
 ## Deployment
@@ -101,7 +100,6 @@ npm run build
 ```bash
 npm run deploy
 ```
-
 
 This will deploy your application to your Cloudflare Workers account. Make sure you have configured Wrangler with your Cloudflare account credentials.
 
