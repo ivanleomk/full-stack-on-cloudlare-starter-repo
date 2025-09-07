@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"@repo/data-ops": "workspace:*",
-		"deploy": "wrangler deploy",
+		"deploy:stage": "wrangler deploy --env stage",
+		"deploy:prod": "wrangler deploy --env production",
 		"dev": "wrangler dev --x-remote-bindings",
 		"start": "wrangler dev",
 		"test": "vitest",

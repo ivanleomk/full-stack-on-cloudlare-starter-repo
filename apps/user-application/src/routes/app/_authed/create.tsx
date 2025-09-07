@@ -30,14 +30,14 @@ function RouteComponent() {
         nav({
           to: "/app/link/$id",
           params: {
-            id: linkId,
+            id: linkId.id,
           },
         });
       },
       onError: () => {
         toast.error("Failed to create link");
       },
-    }),
+    })
   );
 
   const isValidUrl = (string: string) => {
