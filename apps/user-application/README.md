@@ -1,5 +1,7 @@
 # TanStack React + tRPC + Cloudflare Worker Template
 
+Testing
+
 This template provides a fully integrated setup of TanStack React Router, tRPC, and Cloudflare Workers, allowing you to build full-stack applications that run on the edge.
 
 ## Features
@@ -78,12 +80,11 @@ export async function createContext({
 }
 
 // In your tRPC procedures
-export const myProcedure = t.procedure
-  .query(({ ctx }) => {
-    // Access typed bindings
-    const value = await ctx.env.MY_KV.get('some-key');
-    return { value };
-  });
+export const myProcedure = t.procedure.query(({ ctx }) => {
+  // Access typed bindings
+  const value = await ctx.env.MY_KV.get("some-key");
+  return { value };
+});
 ```
 
 ## Deployment
@@ -101,7 +102,6 @@ npm run build
 ```bash
 npm run deploy
 ```
-
 
 This will deploy your application to your Cloudflare Workers account. Make sure you have configured Wrangler with your Cloudflare account credentials.
 
