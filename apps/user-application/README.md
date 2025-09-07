@@ -1,7 +1,5 @@
 # TanStack React + tRPC + Cloudflare Worker Template
 
-Testing
-
 This template provides a fully integrated setup of TanStack React Router, tRPC, and Cloudflare Workers, allowing you to build full-stack applications that run on the edge.
 
 ## Features
